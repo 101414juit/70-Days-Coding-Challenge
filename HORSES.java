@@ -16,15 +16,19 @@ public class HORSES {
 				return;
 			int[] numbers = Arrays.stream(s).mapToInt(Integer::parseInt).toArray();
 			Arrays.sort(numbers);
-			int min_start=-1,min_end=-1;
+			int min_start=numbers[N-1],min_end=numbers[N-1],min=numbers[N-1], temp=numbers[N-1];
 			for(int j=0;j<N/2;j++){
 				min_start=numbers[j+1]-numbers[j];
 				min_end=numbers[N-(j+1)]-numbers[N-(j+2)];
+				
 				if(min_end>min_start)
-					System.out.println(min_start);
-				else System.out.println(min_end);
+					temp = min_start;
+				else 
+					temp = min_end;
+				if(min>temp)
+					min=temp;
 			}
-			
+			System.out.println("minimum "+ min);
 		}
 
 	}
