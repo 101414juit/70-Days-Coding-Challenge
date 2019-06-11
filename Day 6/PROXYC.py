@@ -1,7 +1,17 @@
 '''
 https://www.codechef.com/JUNE19B/problems/PROXYC
 Custom Testcase:
+10
+2
+PP
+2
+PA
+1
+A
+1
+P
 4
+PAAP
 8
 PAAAAAPA
 8
@@ -10,6 +20,8 @@ APAAAAPA
 PPPPP
 5
 AAAAA
+9
+PAAPPAPPP
 '''
 
 for _ in range(int(input())):
